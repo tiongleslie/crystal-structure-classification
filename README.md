@@ -9,8 +9,8 @@ We provide several example source code as follows:
 
 
 ### Library Dependency
-  1) Anaconda3 - Python3.7 (plesase refer to the guideline https://www.anaconda.com/distribution/#download-section)
-  2) TensorFlow 1.13 - Python3 (plesase refer to the guideline https://www.tensorflow.org/install/pip)
+  1) Anaconda3 - Python3.7 (please refer to the guideline https://www.anaconda.com/distribution/#download-section)
+  2) TensorFlow 1.13 - Python3 (please refer to the guideline https://www.tensorflow.org/install/pip)
   3) PIL - Python3
   4) NatSort - Python3
   
