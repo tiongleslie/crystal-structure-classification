@@ -1,3 +1,8 @@
+# ---------------------------------------------------------
+# Example Code for XRD-Edge Generation
+# Licensed under The KIST License
+# Written by CSRC
+# ---------------------------------------------------------
 import os
 import natsort
 import numpy as np
