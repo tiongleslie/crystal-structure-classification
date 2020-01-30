@@ -1,3 +1,8 @@
+# ---------------------------------------------------------
+# XRD-Edge Class Implementation
+# Licensed under The KIST License
+# Written by CSRC
+# ---------------------------------------------------------
 import numpy as np
 import math
 
