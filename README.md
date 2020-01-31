@@ -5,8 +5,8 @@ This work contributes a novel descriptor XRD-Edge and Multi-stream DenseNet (MSD
 Please cite the paper [1] if you are using our model in your research works.
 
 We also provide the example of the source codes as follows:
-  1) XRD-Edge descriptor (see the folder 'XRD-Edge')
-  2) Pre-trained model of MSDN for crystal structures classification (see the folder '[MSDN](https://github.com/tiongleslie/crystal-structure-classification/tree/master/MSDN)'
+  1) XRD-Edge descriptor (see [XRD-Edge](https://github.com/tiongleslie/crystal-structure-classification/tree/master/XRD-Edge))
+  2) Pre-trained model of MSDN for crystal structures classification (see [MSDN](https://github.com/tiongleslie/crystal-structure-classification/tree/master/MSDN))
 
 ### Compatibility
 The codes are tested using Tensorflow-GPU r1.13 under Ubuntu OS 18.04 with Anaconda3 (Python 3.7).
