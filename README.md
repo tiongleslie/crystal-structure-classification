@@ -4,7 +4,7 @@
 This work contributes a novel descriptor XRD-Edge and Multi-stream DenseNet (MSDN) for crystal structure classification.
 Please cite the paper [1] when you are using the test model in your research works.
 
-We provide several example source code as follows:
+We also provide the example of the source codes as follows:
   1) XRD-Edge descriptor (see the folder 'XRD-Edge')
   2) Pre-trained model of MSDN for crystal structures classifcation (see the folder 'MSDN')  
 
