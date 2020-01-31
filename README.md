@@ -6,7 +6,7 @@ Please cite the paper [1] when you are using the test model in your research wor
 
 We provide several example source code as follows:
   1) XRD-Edge descriptor (see the folder 'XRD-Edge')
-  2) the pre-trained model of MSDN for crystal structures classifcation (see the folder 'MSDN')  
+  2) Pre-trained model of MSDN for crystal structures classifcation (see the folder 'MSDN')  
 
 
 ### Library Dependency
