@@ -49,13 +49,14 @@ def main(args):
     direct = os.listdir(d)
     direct.sort()
     sorted(direct)
-
+    print('Generating XRD-Edge:')
+    
     for sd in direct:
-        if os.path.isdir('Sample Dataset/Sample Result/' + sd) is False:
-            os.mkdir('Sample Dataset/Sample Result/' + sd)
-            os.mkdir('Sample Dataset/Sample Result/' + sd + '/x')
-            os.mkdir('Sample Dataset/Sample Result/' + sd + '/y')
-            os.mkdir('Sample Dataset/Sample Result/' + sd + '/z')
+        if os.path.isdir(args.test_dir + '/Sample Result/' + sd) is False:
+            os.mkdir(args.test_dir + '/Sample Result/' + sd)
+            os.mkdir(args.test_dir + '/Sample Result/' + sd + '/x')
+            os.mkdir(args.test_dir + '/Sample Result/' + sd + '/y')
+            os.mkdir(args.test_dir + '/Sample Result/' + sd + '/z')
 
         folder = os.path.join(d, sd)
 
