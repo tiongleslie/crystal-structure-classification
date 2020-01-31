@@ -14,7 +14,7 @@ os.environ['TF_CPP_MIN_LOG_LEVEL'] = '1'
 
 class MSDN_utils(object):
     def __init__(self):
-        print('Loading')
+        print('Model Loading...')
 
     def test_MSDN(path, test_image_r, test_image_g, test_image_b):
         graph = tf.get_default_graph()
