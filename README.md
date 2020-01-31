@@ -6,7 +6,7 @@ Please cite the paper [1] if you are using our model in your research works.
 
 We also provide the example of the source codes as follows:
   1) XRD-Edge descriptor (see the folder 'XRD-Edge')
-  2) Pre-trained model of MSDN for crystal structures classification (see the folder 'MSDN')
+  2) Pre-trained model of MSDN for crystal structures classification (see the folder '[MSDN]()')
 
 ### Compatibility
 The codes are tested using Tensorflow-GPU r1.13 under Ubuntu OS 18.04 with Anaconda3 (Python 3.7).
