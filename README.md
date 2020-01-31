@@ -13,7 +13,7 @@ The codes are tested using Tensorflow-GPU r1.13 under Ubuntu OS 18.04 with Anaco
 
 ### Library Dependency
   1) [Anaconda](https://www.anaconda.com/distribution/#download-section)
-  2) [TensorFlow](please refer to the guideline https://www.tensorflow.org/install/pip)
+  2) [TensorFlow](https://www.tensorflow.org/install/pip)
   3) [PIL](https://anaconda.org/anaconda/pillow)
   4) [NatSort](https://pypi.org/project/natsort/)
   5) [SciPy](https://anaconda.org/anaconda/scipy)
