@@ -1,10 +1,12 @@
 # ---------------------------------------------------------
 # Example Code for XRD-Edge Generation
 # Licensed under The KIST License
-# Written by CSRC
+# Written by CSRC, KIST
 # ---------------------------------------------------------
 import os
 import natsort
+import argparse
+import sys
 import numpy as np
 from XRD_Edge import XRD_Edge
 from PIL import Image
@@ -35,24 +37,35 @@ def call_XRD_Edge(sd, folder, f):
         print('Sample Dataset/Sample Result/' + sd + '/' + mp_id[0] + ' done!')
 
 
-d = 'Sample Dataset/Sample XRD'
-direct = os.listdir(d)
-direct.sort()
-sorted(direct)
+def parse_arguments(argv):
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--test_dir', help='Test dataset path.', default='Sample Dataset')
+
+    return parser.parse_args(argv)
 
 
-for sd in direct:
-    if os.path.isdir('Sample Dataset/Sample Result/' + sd) is False:
-        os.mkdir('Sample Dataset/Sample Result/' + sd)
-        os.mkdir('Sample Dataset/Sample Result/' + sd + '/x')
-        os.mkdir('Sample Dataset/Sample Result/' + sd + '/y')
-        os.mkdir('Sample Dataset/Sample Result/' + sd + '/z')
+def main(args):
+    d = args.test_dir + '/Sample XRD'
+    direct = os.listdir(d)
+    direct.sort()
+    sorted(direct)
 
-    folder = os.path.join(d, sd)
+    for sd in direct:
+        if os.path.isdir('Sample Dataset/Sample Result/' + sd) is False:
+            os.mkdir('Sample Dataset/Sample Result/' + sd)
+            os.mkdir('Sample Dataset/Sample Result/' + sd + '/x')
+            os.mkdir('Sample Dataset/Sample Result/' + sd + '/y')
+            os.mkdir('Sample Dataset/Sample Result/' + sd + '/z')
 
-    if os.path.isdir(folder):
-        directFiles = os.listdir(folder)
-        files = natsort.natsorted(directFiles)
+        folder = os.path.join(d, sd)
 
-        for f in files:
-            call_XRD_Edge(sd, folder, f)
+        if os.path.isdir(folder):
+            directFiles = os.listdir(folder)
+            files = natsort.natsorted(directFiles)
+
+            for f in files:
+                call_XRD_Edge(sd, folder, f)
+
+
+if __name__ == '__main__':
+    main(parse_arguments(sys.argv[1:]))
