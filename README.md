@@ -12,7 +12,7 @@ We also provide the example of the source codes as follows:
 The codes are tested using Tensorflow-GPU r1.13 under Ubuntu OS 18.04 with Anaconda3 (Python 3.7).
 
 ### Library Dependency
-  1) [Anaconda](https://www.anaconda.com/distribution/#download-section)
+  1) [Anaconda3](https://www.anaconda.com/distribution/#download-section)
   2) [TensorFlow](https://www.tensorflow.org/install/pip)
   3) [PIL](https://anaconda.org/anaconda/pillow)
   4) [NatSort](https://pypi.org/project/natsort/)
