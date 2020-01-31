@@ -19,7 +19,7 @@ The codes are tested using Tensorflow-GPU r1.13 under Ubuntu OS 18.04 with Anaco
   5) SciPy - Python3 (please refer to https://anaconda.org/anaconda/scipy)
 
 ### Dataset
-Please refer to [1] for dataset information.
+Please refer to [1] for the dataset information.
 
 ### Paper Citation
   [1]
