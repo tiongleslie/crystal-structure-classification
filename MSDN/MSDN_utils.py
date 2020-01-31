@@ -26,7 +26,6 @@ class MSDN_utils(object):
             x2_tfph = graph.get_tensor_by_name("input_img_y:0")
             x3_tfph = graph.get_tensor_by_name("input_img_z:0")
             drop_prob = graph.get_tensor_by_name("keep_prob:0")
-            is_training = graph.get_tensor_by_name("is_training:0")
 
             pred1 = graph.get_tensor_by_name("output_1/add:0")
             pred2 = graph.get_tensor_by_name("output_2/add:0")
@@ -34,8 +33,7 @@ class MSDN_utils(object):
 
             output_score = tf.nn.softmax(pred1 + pred2 + pred3, name="softmax_scores_1")
 
-            test_feed = {x1_tfph: test_image_r, x2_tfph: test_image_g, x3_tfph: test_image_b,
-                         drop_prob: 1.0, is_training: False}
+            test_feed = {x1_tfph: test_image_r, x2_tfph: test_image_g, x3_tfph: test_image_b, drop_prob: 1.0}
             score = sess.run(output_score, feed_dict=test_feed)
 
         return score
