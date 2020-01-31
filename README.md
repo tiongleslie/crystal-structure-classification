@@ -6,13 +6,13 @@ Please cite the paper [1] if you are using our model in your research works.
 
 We also provide the example of the source codes as follows:
   1) XRD-Edge descriptor (see the folder 'XRD-Edge')
-  2) Pre-trained model of MSDN for crystal structures classification (see the folder '[MSDN]()')
+  2) Pre-trained model of MSDN for crystal structures classification (see the folder '[MSDN](https://github.com/tiongleslie/crystal-structure-classification/tree/master/MSDN)'
 
 ### Compatibility
 The codes are tested using Tensorflow-GPU r1.13 under Ubuntu OS 18.04 with Anaconda3 (Python 3.7).
 
 ### Library Dependency
-  1) Anaconda (please refer to the guideline https://www.anaconda.com/distribution/#download-section)
+  1) [Anaconda](https://www.anaconda.com/distribution/#download-section)
   2) TensorFlow (please refer to the guideline https://www.tensorflow.org/install/pip)
   3) PIL - Python3 (please refer to https://anaconda.org/anaconda/pillow)
   4) NatSort - Python3 (please refer to https://pypi.org/project/natsort/)
