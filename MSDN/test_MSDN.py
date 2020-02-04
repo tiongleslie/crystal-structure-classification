@@ -139,6 +139,5 @@ def main(args):
             plot_sample(valid_data_r[i], valid_data_g[i], valid_data_b[i], i+1, c_s, s_g)
 
 
-
 if __name__ == '__main__':
     main(parse_arguments(sys.argv[1:]))
