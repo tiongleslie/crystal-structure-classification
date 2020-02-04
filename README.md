@@ -9,7 +9,7 @@ We also provide the codes as follows:
   2) Pre-trained model of MSDN for crystal structures classification (see [MSDN](https://github.com/tiongleslie/crystal-structure-classification/tree/master/MSDN))
 
 ### Compatibility
-The codes are tested using Tensorflow-GPU r1.13 under Ubuntu OS 18.04 with Anaconda3 (Python 3.7).
+The codes are tested using Tensorflow-GPU r1.13 under Ubuntu OS 18.04 and Anaconda3 (Python 3.7) environment.
 
 ### Library Dependency
   1) [Anaconda3](https://www.anaconda.com/distribution/#download-section)
@@ -17,6 +17,7 @@ The codes are tested using Tensorflow-GPU r1.13 under Ubuntu OS 18.04 with Anaco
   3) [PIL](https://anaconda.org/anaconda/pillow)
   4) [NatSort](https://pypi.org/project/natsort/)
   5) [SciPy](https://anaconda.org/anaconda/scipy)
+  6) [Matplotlib](https://anaconda.org/conda-forge/matplotlib)
 
 ### Dataset
 Please refer to [1] for the dataset information.
