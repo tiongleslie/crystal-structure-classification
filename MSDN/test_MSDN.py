@@ -4,13 +4,13 @@
 # Written by CSRC, KIST
 # ---------------------------------------------------------
 import argparse
-import sys
-import os
-import numpy as np
-import tensorflow.python.util.deprecation as deprecation
-import scipy.io as sio
 import matplotlib as mpl
 import matplotlib.pyplot as plt
+import numpy as np
+import os
+import scipy.io as sio
+import sys
+import tensorflow.python.util.deprecation as deprecation
 from PIL import Image
 from MSDN_utils import MSDN_utils
 from image_utils import image_utils
@@ -70,10 +70,11 @@ def main(args):
     #
     # Test Data
     #
-    # Read the images from R
     print("======================================")
     print("=============Data Loading=============")
     print("======================================")
+
+    # Read the images from R
     vim_r = image_utils(path=test_path, c_channel='x')
     valid_data_r, vshuffle_list = vim_r.load_data()
     print('R images (test_data) are loaded')
