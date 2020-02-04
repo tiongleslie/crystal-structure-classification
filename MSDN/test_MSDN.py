@@ -9,8 +9,12 @@ import os
 import numpy as np
 import tensorflow.python.util.deprecation as deprecation
 import scipy.io as sio
+import matplotlib as mpl
+import matplotlib.pyplot as plt
+from PIL import Image
 from MSDN_utils import MSDN_utils
 from image_utils import image_utils
+
 
 # Hide all the warning messages from TensorFlow
 deprecation._PRINT_DEPRECATION_WARNINGS = False
@@ -22,8 +26,40 @@ def parse_arguments(argv):
     parser.add_argument('--test_dir', help='Test dataset path.', default='Test Sample')
     parser.add_argument('--model_dir', help='Pretrained model path.', default='pretrained model')
     parser.add_argument('--batch_size', help='Batch size.', default=32)
+    parser.add_argument('--plot_sample', help='Demonstrate the results.', default=True)
 
     return parser.parse_args(argv)
+
+
+def plot_sample(valid_data_r, valid_data_g, valid_data_b, i, c_s, s_g):
+    mpl.rcParams['toolbar'] = 'None'
+    f = plt.figure(i ,figsize=(4, 3))
+    f.patch.set_facecolor('black')
+    plt.subplots_adjust(0, 0, 1, 1, 0, 0)
+    for ax in f.axes:
+        ax.axis('off')
+        ax.margins(0, 0)
+        ax.xaxis.set_major_locator(plt.NullLocator())
+        ax.yaxis.set_major_locator(plt.NullLocator())
+
+    string = "Sample " + str(i) + "\nCrystal System: " + str(c_s) + "\nSpace Group: " + str(s_g) + "\n\n"
+    f.add_subplot(1, 3, 1)
+    plt.text(10, 0, string, fontsize=10, color='white')
+    img_r = Image.open(valid_data_r)
+    plt.imshow(img_r)
+    plt.gca().set_axis_off()
+    img_r.close()
+    f.add_subplot(1, 3, 2)
+    img_g = Image.open(valid_data_g)
+    plt.imshow(img_g)
+    plt.gca().set_axis_off()
+    img_g.close()
+    f.add_subplot(1, 3, 3)
+    img_b = Image.open(valid_data_b)
+    plt.imshow(img_b)
+    img_b.close()
+    plt.gca().set_axis_off()
+    plt.show(block=True)
 
 
 def main(args):
@@ -56,7 +92,7 @@ def main(args):
     max_valid = batch_arr_valid[len(batch_arr_valid) - 1]
 
     #
-    # Load Space Groups
+    # Load Space Groups' Label Info
     #
     SG = np.asarray(sio.loadmat('data info/SG.mat')['SG'])
 
@@ -90,15 +126,18 @@ def main(args):
 
     sample = np.array(total_score)
     print("Completed test!")
-    print("Number of samples tested: %i" %(len(sample)))
     sio.savemat('test_scores.mat', {'scores': sample})
     print("\n\n======================================")
     print("========Classification Result=========")
     print("======================================")
+    print("Number of samples tested: %i\n" % (len(sample)))
     for i in range(len(sample)):
         s_g = SG[0][np.argmax(sample[i])]
         c_s = MSDN_utils.disp_crystal_struc(SG[0][np.argmax(sample[i])])
-        print("Sample %i\nCrystal System: %s\nSpace Group: %i\n\n" %(i+1, c_s, s_g))
+        print("Sample %i\nCrystal System: %s\nSpace Group: %i\n\n" % (i + 1, c_s, s_g))
+        if args.plot_sample is True:
+            plot_sample(valid_data_r[i], valid_data_g[i], valid_data_b[i], i+1, c_s, s_g)
+
 
 
 if __name__ == '__main__':
