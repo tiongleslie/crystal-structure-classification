@@ -128,6 +128,7 @@ def main(args):
     sample = np.array(total_score)
     print("Completed test!")
     sio.savemat('test_scores.mat', {'scores': sample})
+    
     print("\n\n======================================")
     print("========Classification Result=========")
     print("======================================")
