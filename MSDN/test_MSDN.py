@@ -23,10 +23,11 @@ os.environ['TF_CPP_MIN_LOG_LEVEL'] = '1'
 
 def parse_arguments(argv):
     parser = argparse.ArgumentParser()
-    parser.add_argument('--test_dir', help='Test dataset path.', default='Test Sample')
-    parser.add_argument('--model_dir', help='Pretrained model path.', default='pretrained model')
+    parser.add_argument('--test_dir', help='Test samples dataset path.', default='Test Sample')
+    parser.add_argument('--model_dir', help='Pre-trained model path.', default='pretrained model')
     parser.add_argument('--batch_size', help='Batch size.', default=32)
-    parser.add_argument('--plot_sample', help='Demonstrate the results.', default=True)
+    parser.add_argument('--plot_sample', help='Demonstrate the results one by one. Not recommended for more than 10 '
+                                              'samples', default=True)
 
     return parser.parse_args(argv)
 
@@ -128,7 +129,7 @@ def main(args):
     sample = np.array(total_score)
     print("Completed test!")
     sio.savemat('test_scores.mat', {'scores': sample})
-    
+
     print("\n\n======================================")
     print("========Classification Result=========")
     print("======================================")
