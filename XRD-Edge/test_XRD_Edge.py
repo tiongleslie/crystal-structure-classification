@@ -3,13 +3,13 @@
 # Licensed under The KIST License
 # Written by CSRC, KIST
 # ---------------------------------------------------------
-import os
-import natsort
 import argparse
-import sys
+import natsort
 import numpy as np
-from XRD_Edge import XRD_Edge
+import os
+import sys
 from PIL import Image
+from XRD_Edge import XRD_Edge
 
 
 def call_XRD_Edge(sd, folder, f):
@@ -50,7 +50,7 @@ def main(args):
     direct.sort()
     sorted(direct)
     print('Generating XRD-Edge:')
-    
+
     for sd in direct:
         if os.path.isdir(args.test_dir + '/Sample Result/' + sd) is False:
             os.mkdir(args.test_dir + '/Sample Result/' + sd)
