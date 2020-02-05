@@ -3,8 +3,8 @@
 # Licensed under The KIST License
 # Written by CSRC, KIST
 # ---------------------------------------------------------
-import numpy as np
 import math
+import numpy as np
 
 
 class XRD_Edge(object):
