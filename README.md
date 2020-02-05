@@ -11,7 +11,7 @@ We also provide the codes as follows:
 ### Compatibility
 The codes are tested using Tensorflow-GPU r1.13 under Ubuntu OS 18.04 and Anaconda3 (Python 3.7) environment.
 
-### Library Dependency
+### Requirements
   1) [Anaconda3](https://www.anaconda.com/distribution/#download-section)
   2) [TensorFlow](https://www.tensorflow.org/install/pip)
   3) [PIL](https://anaconda.org/anaconda/pillow)
