@@ -24,9 +24,11 @@ def parse_arguments(argv):
     parser = argparse.ArgumentParser()
     parser.add_argument('--test_dir', help='Test samples dataset path.', default='Test Sample')
     parser.add_argument('--model_dir', help='Pre-trained model path.', default='pretrained model')
-    parser.add_argument('--batch_size', help='Batch size.', default=32)
-    parser.add_argument('--plot_sample', help='Demonstrate the results one by one. Not recommended for more than 10 '
-                                              'samples', default=True)
+    parser.add_argument('--batch_size', type=int, help='Batch size.', default=32)
+    parser.add_argument('--plot_sample', type=int,
+                        help='Demonstrate the results one by one. Not recommended for more than 10 samples. '
+                             'Enter 1 as True and 0 as False.',
+                        default=1)
 
     return parser.parse_args(argv)
 
@@ -103,6 +105,8 @@ def main(args):
     print("\n\n======================================")
     print("=====Load Pretrained Model: MSDN======")
     print("======================================")
+    print("Batch size: %i" % args.batch_size)
+
     for k in range(len(batch_arr_valid)):
         if batch_arr_valid[k] == max_valid:
             test_range_r = valid_data_r[batch_arr_valid[k]:len(valid_data_r)]
@@ -137,9 +141,9 @@ def main(args):
         s_g = SG[0][np.argmax(sample[i])]
         c_s = MSDN_utils.disp_crystal_struc(SG[0][np.argmax(sample[i])])
         print("Sample %i\nCrystal System: %s\nSpace Group: %i\n\n" % (i + 1, c_s, s_g))
-        if args.plot_sample is True:
-            plot_sample(valid_data_r[i], valid_data_g[i], valid_data_b[i], i+1, c_s, s_g)
-
-
+        if args.plot_sample is 1:
+            plot_sample(valid_data_r[i], valid_data_g[i], valid_data_b[i], i + 1, c_s, s_g)    
+    
+    
 if __name__ == '__main__':
     main(parse_arguments(sys.argv[1:]))
