@@ -3,8 +3,8 @@
 # Licensed under The KIST License
 # Written by CSRC, KIST
 # ---------------------------------------------------------
-import tensorflow as tf
 import os
+import tensorflow as tf
 import tensorflow.python.util.deprecation as deprecation
 
 # Hide all the warning messages from TensorFlow
