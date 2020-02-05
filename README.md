@@ -26,6 +26,12 @@ The codes are tested using Tensorflow-GPU r1.13 under Ubuntu OS 18.04 and Anacon
 $ python test_XRD_Edge.py
 ```
 
+#### Pre-trained model: MSDN
+- Run the code `test_MSDN.py`
+```shell
+$ python test_MSDN.py --plot_sample false
+```
+
 ### Dataset
 Please refer to [1] for the dataset information.
 
