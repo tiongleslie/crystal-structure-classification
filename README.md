@@ -22,6 +22,7 @@ The codes are tested using Tensorflow-GPU r1.13 under Ubuntu OS 18.04 and Anacon
 ### Running sample code
 #### XRD-Edge
 > Run the code test_XRD_Edge.py
+
 ```shell
 $ python test_XRD_Edge.py
 ```
