@@ -21,10 +21,10 @@ The codes are tested using Tensorflow-GPU r1.13 under Ubuntu OS 18.04 and Anacon
  
 ### Running sample code
 #### XRD-Edge
-'''
-    python
-'''
-
+> Run the code test_XRD_Edge.py
+```shell
+$ python test_XRD_Edge.py
+```
 
 ### Dataset
 Please refer to [1] for the dataset information.
