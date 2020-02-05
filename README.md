@@ -29,7 +29,7 @@ $ python test_XRD_Edge.py
 #### Pre-trained model: MSDN
 - Run the code `test_MSDN.py` in [MSDN](https://github.com/tiongleslie/crystal-structure-classification/tree/master/MSDN)
 ```shell
-$ python test_MSDN.py --plot_sample false
+$ python test_MSDN.py --batch_size 16 --plot_sample 0
 ```
 
 ### Dataset
