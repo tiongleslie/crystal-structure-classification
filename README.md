@@ -21,13 +21,13 @@ The codes are tested using Tensorflow-GPU r1.13 under Ubuntu OS 18.04 and Anacon
  
 ### Running sample code
 #### XRD-Edge
-- Run the code `test_XRD_Edge.py`
+- Run the code `test_XRD_Edge.py` in [XRD-Edge](https://github.com/tiongleslie/crystal-structure-classification/tree/master/XRD-Edge)
 ```shell
 $ python test_XRD_Edge.py
 ```
 
 #### Pre-trained model: MSDN
-- Run the code `test_MSDN.py`
+- Run the code `test_MSDN.py` in [MSDN](https://github.com/tiongleslie/crystal-structure-classification/tree/master/MSDN)
 ```shell
 $ python test_MSDN.py --plot_sample false
 ```
