@@ -11,10 +11,9 @@ import os
 import scipy.io as sio
 import sys
 import tensorflow.python.util.deprecation as deprecation
-from PIL import Image
-from MSDN_utils import MSDN_utils
 from image_utils import image_utils
-
+from MSDN_utils import MSDN_utils
+from PIL import Image
 
 # Hide all the warning messages from TensorFlow
 deprecation._PRINT_DEPRECATION_WARNINGS = False
@@ -34,7 +33,7 @@ def parse_arguments(argv):
 
 def plot_sample(valid_data_r, valid_data_g, valid_data_b, i, c_s, s_g):
     mpl.rcParams['toolbar'] = 'None'
-    f = plt.figure(i ,figsize=(4, 3))
+    f = plt.figure(i, figsize=(4, 3))
     f.patch.set_facecolor('black')
     plt.subplots_adjust(0, 0, 1, 1, 0, 0)
     for ax in f.axes:
