@@ -3,10 +3,10 @@
 # Licensed under The KIST License
 # Written by CSRC, KIST
 # ---------------------------------------------------------
-from PIL import Image
-import os
-import numpy as np
 import natsort
+import numpy as np
+import os
+from PIL import Image
 
 
 class image_utils(object):
