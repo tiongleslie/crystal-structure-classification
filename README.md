@@ -9,11 +9,11 @@ We also provide the codes as follows:
   2) Pre-trained model of MSDN (see [MSDN](https://github.com/tiongleslie/crystal-structure-classification/tree/master/MSDN))
 
 ### Compatibility
-The codes are tested using Tensorflow-GPU r1.13 under Ubuntu OS 18.04 and Anaconda3 (Python 3.7) environment.
+The codes are tested using Tensorflow-GPU 1.13 under Ubuntu OS 18.04 and Anaconda3 (Python 3.7) environment.
 
 ### Requirements
   1) [Anaconda3](https://www.anaconda.com/distribution/#download-section)
-  2) [TensorFlow-GPU 1.13](https://www.tensorflow.org/install/pip)
+  2) [TensorFlow-GPU 1.13+ or Tensorflow 1.13+](https://www.tensorflow.org/install/pip)
   3) [PIL](https://anaconda.org/anaconda/pillow)
   4) [NatSort](https://pypi.org/project/natsort/)
   5) [SciPy](https://anaconda.org/anaconda/scipy)
