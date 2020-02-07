@@ -21,7 +21,7 @@ We tested the codes with:
   6) [Matplotlib](https://anaconda.org/conda-forge/matplotlib)
   7) [Numpy 1.16.4](https://pypi.org/project/numpy/1.16.4/)
  
-### Running sample code
+### Sample code
 #### XRD-Edge
 - Run the code `test_XRD_Edge.py` in [XRD-Edge](https://github.com/tiongleslie/crystal-structure-classification/tree/master/XRD-Edge)
 ```shell
