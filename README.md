@@ -1,6 +1,6 @@
 # Crystal Structure Classification
 
-## Introduction
+### Introduction
 This work contributes a novel descriptor XRD-Edge and Multi-stream DenseNet (MSDN) for crystal structure classification.
 
 We also provide the codes as follows:
