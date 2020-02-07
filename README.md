@@ -18,7 +18,7 @@ The codes are tested using Tensorflow-GPU 1.13.1 under Ubuntu OS 18.04 and Anaco
   4) [NatSort](https://pypi.org/project/natsort/)
   5) [SciPy](https://anaconda.org/anaconda/scipy)
   6) [Matplotlib](https://anaconda.org/conda-forge/matplotlib)
-  7) [Numpy 1.17.5](https://pypi.org/project/numpy/1.17.5/)
+  7) [Numpy 1.16.4](https://pypi.org/project/numpy/1.16.4/)
  
 ### Running sample code
 #### XRD-Edge
