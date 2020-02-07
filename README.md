@@ -38,5 +38,5 @@ $ python test_MSDN.py --batch_size 16 --plot_sample 0
 Please refer to [1] for the dataset information.
 
 ### Citation
-Please cite the paper [1] if you are using our model in your research works.
+Please cite us if you are using our model in your research works:
 1. []
