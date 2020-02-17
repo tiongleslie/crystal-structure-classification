@@ -1,6 +1,6 @@
 # ---------------------------------------------------------
 # Multi-stream DenseNet (MSDN) Implementation
-# Licensed under The KIST License
+# Licensed under The MIT License
 # Written by CSRC, KIST
 # ---------------------------------------------------------
 import os
