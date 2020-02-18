@@ -10,7 +10,7 @@ We also provide the codes as follows:
 ### Compatibility
 We tested the codes with:
   1) Tensorflow-GPU 1.13.1 under Ubuntu OS 18.04 LTS and Anaconda3 (Python 3.7)
-  1) Tensorflow 1.13.1 under Windows 10 and Anaconda3 (Python 3.7)
+  1) Tensorflow-GPU 1.13.1/Tensorflow 1.13.1 under Windows 10 and Anaconda3 (Python 3.7)
 
 ### Requirements
   1) [Anaconda3](https://www.anaconda.com/distribution/#download-section)
