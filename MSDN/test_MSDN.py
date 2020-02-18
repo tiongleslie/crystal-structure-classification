@@ -36,6 +36,7 @@ def plot_sample(valid_data_r, valid_data_g, valid_data_b, i, c_s, s_g):
     mpl.rcParams['toolbar'] = 'None'
     f = plt.figure(i, figsize=(4, 3))
     f.patch.set_facecolor('black')
+
     plt.subplots_adjust(0, 0, 1, 1, 0, 0)
     for ax in f.axes:
         ax.axis('off')
@@ -50,15 +51,18 @@ def plot_sample(valid_data_r, valid_data_g, valid_data_b, i, c_s, s_g):
     plt.imshow(img_r)
     plt.gca().set_axis_off()
     img_r.close()
+
     f.add_subplot(1, 3, 2)
     img_g = Image.open(valid_data_g)
     plt.imshow(img_g)
     plt.gca().set_axis_off()
     img_g.close()
+
     f.add_subplot(1, 3, 3)
     img_b = Image.open(valid_data_b)
     plt.imshow(img_b)
     img_b.close()
+
     plt.gca().set_axis_off()
     plt.show(block=True)
 
