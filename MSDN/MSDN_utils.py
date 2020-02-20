@@ -16,6 +16,7 @@ class MSDN_utils(object):
     def __init__(self):
         print('Model Loading...')
 
+    @staticmethod
     def test_MSDN(path, test_image_r, test_image_g, test_image_b):
         graph = tf.get_default_graph()
         with tf.Session() as sess:
@@ -38,6 +39,7 @@ class MSDN_utils(object):
 
         return score
 
+    @staticmethod
     def disp_crystal_struc(SG):
         if 1 <= SG <= 2:
             return "Triclinic"
