@@ -25,7 +25,7 @@ class image_utils(object):
         s_path_array = []
 
         if self.c_channel is None:
-            print("Please assign the axis (x, y and z) for c_channel")
+            print("Please assign the axis (x, y or z) for c_channel")
             exit(1)
         elif self.c_channel is 'x':
             for class_name in path_list:
@@ -70,10 +70,10 @@ class image_utils(object):
             data_list.append(arr)
             img.close()
 
-        X1 = np.array(data_list)
+        X = np.array(data_list)
         data_X = np.zeros((batch_size, self.height, self.width, self.channel), dtype=np.float32)
 
         for i in range(batch_size):
-            data_X[i, :, :, :] = X1[i, :, :, :]
+            data_X[i, :, :, :] = X[i, :, :, :]
 
         return data_X / 255.
