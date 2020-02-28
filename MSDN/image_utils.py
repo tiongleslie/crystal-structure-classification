@@ -16,7 +16,6 @@ class image_utils(object):
         self.height = h
         self.channel = c
         self.c_channel = c_channel
-        self.properties = []
 
     def load_data(self, shuffle_list=None):
         path_list = os.listdir(self.path)
