@@ -23,9 +23,9 @@ We tested the codes with:
  
 ### Sample code
 #### Shaping diffraction pattern
-- Run the code `test_XRD_Edge.py` in [Descriptor](https://github.com/tiongleslie/crystal-structure-classification/tree/master/Descriptor)
+- Run the code `test_descriptor.py` in [Descriptor](https://github.com/tiongleslie/crystal-structure-classification/tree/master/Descriptor)
 ```shell
-$ python test_XRD_Edge.py
+$ python test_descriptor.py
 ```
 
 #### Pre-trained model: MSDN
