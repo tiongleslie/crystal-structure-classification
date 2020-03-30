@@ -20,6 +20,9 @@ deprecation._PRINT_DEPRECATION_WARNINGS = False
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '1'
 
 
+#
+# Parameters
+#
 def parse_arguments(argv):
     parser = argparse.ArgumentParser()
     parser.add_argument('--test_dir', help='Test samples dataset path.', default='Test Sample')
@@ -32,6 +35,9 @@ def parse_arguments(argv):
     return parser.parse_args(argv)
 
 
+#
+# Display sample images
+#
 def plot_sample(valid_data_r, valid_data_g, valid_data_b, i, c_s, s_g):
     mpl.rcParams['toolbar'] = 'None'
     f = plt.figure(i, figsize=(4, 3))
@@ -67,6 +73,9 @@ def plot_sample(valid_data_r, valid_data_g, valid_data_b, i, c_s, s_g):
     plt.show(block=True)
 
 
+#
+# Main Function
+#
 def main(args):
     batch_size = args.batch_size
     total_score = []
