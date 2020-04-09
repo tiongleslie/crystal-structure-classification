@@ -117,7 +117,6 @@ def main(args):
     print("\n\n=======================================")
     print("===== Load Pretrained Model: MSDN =====")
     print("=======================================")
-    print("Batch size: %i" % args.batch_size)
 
     for k in range(len(batch_arr_valid)):
         if batch_arr_valid[k] == max_valid:
@@ -142,7 +141,7 @@ def main(args):
         total_score.extend(score)
 
     sample = np.array(total_score)
-    print("Completed test!")
+    print("Test completed!")
     sio.savemat('test_scores.mat', {'scores': sample})
 
     print("\n\n======================================")
