@@ -9,7 +9,7 @@ import numpy as np
 import os
 import sys
 from PIL import Image
-from Shaping_DP import Shaping_DP
+from Shaped_DP import Shaped_DP
 
 
 def call_Descriptor(sd, folder, f):
@@ -20,7 +20,7 @@ def call_Descriptor(sd, folder, f):
     data = np.asarray(img, dtype=np.float32)
     img.close()
 
-    lDP = Shaping_DP(data)
+    lDP = Shaped_DP(data)
 
     if mp_id[1] == 'x.png':
         result_r = lDP.create_descriptor(1)
