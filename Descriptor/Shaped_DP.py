@@ -7,7 +7,7 @@ import math
 import numpy as np
 
 
-class Shaping_DP(object):
+class Shaped_DP(object):
     def __init__(self, I=None):
         if I is not None:
             self.I = I
