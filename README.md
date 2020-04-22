@@ -1,10 +1,10 @@
 # Crystal Structure Classification
 
 ### Introduction
-This work contributes a novel descriptor Shaping Diffraction Pattern and Multi-stream DenseNet (MSDN) for crystal structure classification.
+This work contributes a novel descriptor Shaped Diffraction Pattern (Shaped DP) and Multi-stream DenseNet (MSDN) for crystal structure classification.
 
 We also provide the codes as follows:
-  1) Shaping Diffraction Pattern (see [Descriptor](https://github.com/tiongleslie/crystal-structure-classification/tree/master/Descriptor))
+  1) Shaped DP (see [Descriptor](https://github.com/tiongleslie/crystal-structure-classification/tree/master/Descriptor))
   2) Pre-trained model of MSDN (see [MSDN](https://github.com/tiongleslie/crystal-structure-classification/tree/master/MSDN))
 
 ### Compatibility
