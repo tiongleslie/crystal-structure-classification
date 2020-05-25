@@ -3,6 +3,10 @@
 # Licensed under The MIT License
 # Written by CSRC, KIST
 # ------------------------------------------------------------------
+from __future__ import absolute_import
+from __future__ import division
+from __future__ import print_function
+
 import argparse
 import matplotlib as mpl
 import matplotlib.pyplot as plt
@@ -142,7 +146,6 @@ def main(args):
 
     sample = np.array(total_score)
     print("Test completed!")
-    sio.savemat('test_scores.mat', {'scores': sample})
 
     print("\n\n======================================")
     print("======= Classification Result ========")
