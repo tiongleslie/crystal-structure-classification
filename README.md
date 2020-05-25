@@ -35,7 +35,7 @@ $ python test_MSDN.py --batch_size 16 --plot_sample 0
 ```
 
 ### Dataset
-Please refer to [1] for the dataset information and the dataset is shared on [Google Drive](https://drive.google.com/drive/folders/1l7n6khjbbUB6cRS-xwlYw5xbyOphXBn6).
+The dataset is shared on [Google Drive](https://drive.google.com/drive/folders/1l7n6khjbbUB6cRS-xwlYw5xbyOphXBn6).
 
 ### Citation
 Please cite us if you are using our model in your research works:
