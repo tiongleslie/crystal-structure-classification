@@ -3,6 +3,10 @@
 # Licensed under The MIT License
 # Written by CSRC, KIST
 # --------------------------------------------------------------------
+from __future__ import absolute_import
+from __future__ import division
+from __future__ import print_function
+
 import argparse
 import natsort
 import numpy as np
