@@ -22,7 +22,7 @@ We tested the codes with:
   7) [Numpy 1.16.4](https://pypi.org/project/numpy/1.16.4/)
  
 ### Sample code
-#### Shaped diffraction pattern
+#### Shaped DP
 - Run the code `test_descriptor.py` in [Descriptor](https://github.com/tiongleslie/crystal-structure-classification/tree/master/Descriptor)
 ```shell
 $ python test_descriptor.py
