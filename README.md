@@ -1,4 +1,4 @@
-# Crystal Structure Classification
+# Identification of Crystal Symmetry from Noisy Diffraction Patterns by A Shape Analysis and Deep Learning
 
 ### Introduction
 This work contributes a novel descriptor Shaped Diffraction Pattern (Shaped DP) and Multi-stream DenseNet (MSDN) for crystal structure classification.
