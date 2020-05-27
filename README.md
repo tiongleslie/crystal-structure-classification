@@ -40,4 +40,4 @@ The dataset is shared on [Google Drive](https://drive.google.com/drive/folders/1
 ### Citation
 Please cite us if you are using our model in your research works: <br />
 
-[1] Leslie Ching Ow Tiong, Jeongrae Kim, Sang Soo Han and Donghun Kim, "Identification of crystal symmetry from noisy diffraction patterns by a shape analysis and deep learning," *arXiv*:2005.12476. (See [link](https://arxiv.org/abs/2005.12476)).
+[1] Leslie Ching Ow Tiong, Jeongrae Kim, Sang Soo Han and Donghun Kim, "Identification of crystal symmetry from noisy diffraction patterns by a shape analysis and deep learning," *arXiv*:2005.12476, 2020. (See [link](https://arxiv.org/abs/2005.12476)).
