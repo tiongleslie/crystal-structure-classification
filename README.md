@@ -38,6 +38,6 @@ $ python test_MSDN.py --batch_size 16 --plot_sample 0
 The dataset is shared on [Zenodo](https://doi.org/10.5281/zenodo.4030041) open data repository.
 
 ### Citation
-Please cite us if you are using our model in your research works: <br />
+Please cite us if you are using our model or dataset in your research works: <br />
 
 [1] Leslie Ching Ow Tiong, Jeongrae Kim, Sang Soo Han and Donghun Kim, "Identification of crystal symmetry from noisy diffraction patterns by a shape analysis and deep learning," *npj Computational Materials*, 6:196, 2020. (See [link](https://www.nature.com/articles/s41524-020-00466-5)).
