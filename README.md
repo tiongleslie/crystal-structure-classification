@@ -5,7 +5,7 @@ This work contributes a novel descriptor Shaped Diffraction Pattern (Shaped DP) 
 
 We also provide the codes as follows:
   1) Shaped DP (see [Descriptor](https://github.com/tiongleslie/crystal-structure-classification/tree/master/Descriptor))
-  2) Pre-trained model of MSDN (see [MSDN](https://github.com/tiongleslie/crystal-structure-classification/tree/master/MSDN))
+  2) Pre-trained model of MSDN (using 72 Space Groups) (see [MSDN](https://github.com/tiongleslie/crystal-structure-classification/tree/master/MSDN))
 
 ### Compatibility
 We tested the codes with:
