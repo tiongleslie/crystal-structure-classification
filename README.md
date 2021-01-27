@@ -4,7 +4,7 @@
 This work contributes a novel descriptor Shaped Diffraction Pattern (Shaped DP) and Multi-stream DenseNet (MSDN) for crystal structure classification.
 
 We also provide the codes as follows:
-  1) Shaped DP (see [Shaped descriptor](https://github.com/tiongleslie/crystal-structure-classification/tree/master/Shaped descriptor))
+  1) Shaped DP (see [Shaped descriptor](https://github.com/tiongleslie/crystal-structure-classification/tree/master/Shaped_Descriptor))
   2) Pre-trained model of MSDN (using 72 Space Groups) (see [MSDN](https://github.com/tiongleslie/crystal-structure-classification/tree/master/MSDN))
 
 ### Compatibility
@@ -23,7 +23,7 @@ We tested the codes with:
  
 ### Sample code
 #### Shaped DP
-- Run the code `test_descriptor.py` in [Shaped descriptor](https://github.com/tiongleslie/crystal-structure-classification/tree/master/Shaped descriptor)
+- Run the code `test_descriptor.py` in [Shaped descriptor](https://github.com/tiongleslie/crystal-structure-classification/tree/master/Shaped_Descriptor)
 ```shell
 $ python test_descriptor.py
 ```
